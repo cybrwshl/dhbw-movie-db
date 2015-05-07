@@ -1,3 +1,13 @@
 from django.contrib import admin
 
 # Register your models here.
+
+from models import *
+
+
+admin.site.register(Movie)
+admin.site.register(Person)
+admin.site.register(Keyword)
+admin.site.register(Company)
+admin.site.register(Role)
+
