@@ -1,0 +1,14 @@
+[
+	{
+		"id": 1,
+		"title": "Iron Man",
+		"genre": "Action",
+		"year": 2008
+	},
+	{
+		"id": 2,
+		"title": "I, Robot",
+		"genre": "Science Fiction",
+		"year": 2002
+	}
+]
