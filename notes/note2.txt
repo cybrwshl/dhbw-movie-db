@@ -1,0 +1,22 @@
+Was fehlt?
+
+movie:
+	- jahr
+	- tagline
+	- id?
+	- rating (optional)
+	- runtime (optional) 
+	- released at (optional)
+	- genre (foreign key)
+
+company:
+	- verbindung zu movie
+
+person:
+	- birthday (optional)
+
+genres:
+	- title
+	- descritpion
+
+unicode functions !!!
