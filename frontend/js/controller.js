@@ -2,9 +2,9 @@ var movieDbControllers = angular.module('movieDbControllers', []);
 
 movieDbControllers.controller('MovieListCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('file:///C:/Users/cybrwushl93/git/dhbw-movie-db/frontend/js/movies.json').success(function(data) {
-      $scope.movies = data;
-  });
+    $http.get('http://127.0.0.1:8000/movies/?format=json').success(function(data){
+    	$scope.movies = data;
+    });
 }]);
 
 movieDbControllers.controller('MovieDetailCtrl', ['$scope', '$routeParams', '$http',
