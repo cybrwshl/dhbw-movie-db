@@ -8,16 +8,34 @@ class Person(models.Model):
     last_name = models.CharField(max_length=30)
     birthday = models.DateField()
 
+    class Meta:
+        verbose_name = 'Person'
+        verbose_name_plural = 'Persons'
+
 
 class Movie(models.Model):
     name = models.CharField(max_length=50)
-    budget = models.DecimalField()
+    budget = models.DecimalField(max_digits=12, decimal_places=0)
     overview = models.CharField(max_length=500)
 
+    class Meta:
+        verbose_name = 'Movie'
+        verbose_name_plural = 'Movies'
 
 class Keyword(models.Model):
     name = models.CharField(max_length=30)
     movie = models.ForeignKey(Movie)
+
+    class Meta:
+        verbose_name = 'Keyword'
+        verbose_name_plural = 'Keywords'
+
+class Company(models.Model):
+    name = models.CharField(max_length=30)
+
+    class Meta:
+        verbose_name = 'Company'
+        verbose_name_plural = 'Companies'
 
 
 class Role(models.Model):
@@ -30,3 +48,7 @@ class Role(models.Model):
     movie = models.ForeignKey(Movie)
     person = models.ForeignKey(Person)
     additional_info = models.CharField(max_length=30)
+
+    class Meta:
+        verbose_name = 'Role'
+        verbose_name_plural = 'Roles'
