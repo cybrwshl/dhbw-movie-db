@@ -10,5 +10,5 @@ python manage.py dumpdata --output dump.json
 ### Import test data
 To import all previously exported data, use this command:
 ```
-python manage.py loaddata dump.json
+python manage.py dumpdata --output dump.json moviedb_backend
 ```

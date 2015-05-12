@@ -24,7 +24,7 @@ class KeywordSerializer(ModelSerializer):
 class CompanySerializer(ModelSerializer):
     class Meta:
         model = Company
-        fields = 'name'
+        fields = ('name',)
 
 
 class RoleSerializer(ModelSerializer):
